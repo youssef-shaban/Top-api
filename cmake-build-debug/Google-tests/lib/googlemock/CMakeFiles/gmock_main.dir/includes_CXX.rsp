@@ -1,0 +1,1 @@
+-IC:/Users/youss/CLionProjects/TopAPI/API_lib -isystem C:/Users/youss/CLionProjects/TopAPI/Google-tests/lib/googlemock/include -isystem C:/Users/youss/CLionProjects/TopAPI/Google-tests/lib/googlemock -isystem C:/Users/youss/CLionProjects/TopAPI/Google-tests/lib/googletest/include -isystem C:/Users/youss/CLionProjects/TopAPI/Google-tests/lib/googletest

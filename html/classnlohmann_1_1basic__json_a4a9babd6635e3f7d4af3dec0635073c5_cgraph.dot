@@ -1,0 +1,16 @@
+digraph "nlohmann::basic_json::to_bson"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="nlohmann::basic_json\l::to_bson",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="create a BSON serialization of a given JSON value"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nlohmann::detail::binary\l_writer::write_bson",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1detail_1_1binary__writer.html#a9ffc566db5219b473762462234b47db9",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="nlohmann::detail::concat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacenlohmann_1_1detail.html#a988ba5d6c0412dff629c6f6d6d226fb0",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="nlohmann::detail::concat_into",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacenlohmann_1_1detail.html#a8501011f8c39fdc1451d41a17032a9c1",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="nlohmann::detail::concat\l_length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacenlohmann_1_1detail.html#ade7da17ad4a5a2be5bc12a6427a3c207",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+digraph "nlohmann::detail::replace_substring"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="nlohmann::detail::replace\l_substring",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="replace all occurrences of a substring by another string"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nlohmann::detail::escape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacenlohmann_1_1detail.html#a6d49f8d1bdd1b5d9c574d13a9b3374f6",tooltip="string escaping as described in RFC 6901 (Sect. 4)"];
+}

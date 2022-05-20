@@ -1,0 +1,3 @@
+
+add_executable(Catch_tests_run APITest.cpp)
+target_link_libraries(Catch_tests_run API_lib)

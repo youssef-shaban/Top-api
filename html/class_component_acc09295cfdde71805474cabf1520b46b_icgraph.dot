@@ -1,0 +1,34 @@
+digraph "Component::set_netlist"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Component::set_netlist",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="setter function to set the netlist map of this component"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="API::ReadJson",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_p_i.html#ad40d53b26cac5b4f8d5e783c2955e383",tooltip="a function to read topology from json file and save it in memory"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="terminalScreen::readScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classterminal_screen.html#ad63ad1e4f6915aa7000777be6a6f9b77",tooltip="this function is to show ReadScreen, to get the input from user and read the json file"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="terminalScreen::mainScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classterminal_screen.html#acfccf14459fb555ef35941e7b059db2c",tooltip="this is the main screen, that uses all other screens"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="terminalScreen::deleteScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classterminal_screen.html#afd94aaef4705a0f586ea9584760fff44",tooltip="this function is to show Deleting Screen, just by getting topology id from user and delete it"];
+  Node5 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="terminalScreen::deviceScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classterminal_screen.html#a67f4cf7d8f9a7d0e98a6e367dd17c425",tooltip="this function is to show Device Screen, just by getting topology id from user and get all devices in ..."];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="terminalScreen::netlistScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classterminal_screen.html#a556466bda2c82d217b32d0f44601dcb0",tooltip="this function is to show netlist Screen, just by getting topology id and netlist id from user and get..."];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="terminalScreen::topScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classterminal_screen.html#a3aae6a9bebeba8f25b0d1276d08d5cbd",tooltip="this function to show all Topology screen, the goal of this function is to get all topologies in memo..."];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="terminalScreen::writeScreen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classterminal_screen.html#a1ef67d0fff2e5a7df47d6ffd5c9322bf",tooltip="this function is to show the Write Screen, getting the input from user and save the topology into jso..."];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

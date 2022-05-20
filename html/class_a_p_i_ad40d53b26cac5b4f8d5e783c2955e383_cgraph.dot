@@ -1,0 +1,30 @@
+digraph "API::ReadJson"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="API::ReadJson",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="a function to read topology from json file and save it in memory"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Component::get_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_component.html#a836357d61b8a7b02c02b8d6c69c53977",tooltip="a getter functio that returns the type of the component"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Topology::set_comp_list",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_topology.html#a9565405b379156b67f445c66606b78a3",tooltip="setter of the component list"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Device::set_Default",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_device.html#a44cd3b15f0e9a16cff36157653d6820c",tooltip="a setter function to set the defualt value of this device"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Component::set_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_component.html#a47ddd067e46adf515094ce11659d7369",tooltip="setter function to set the core device of the component"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Component::set_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_component.html#aef59c1890d51e3dd6979aeff5262776b",tooltip="setter function to set the id of the component"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Topology::set_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_topology.html#a2e57c3509788126a4427771a9e737c3b",tooltip="id setter for topology"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Device::set_Max",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_device.html#aed16b99dbcd7b28d307adc668bda8dd3",tooltip="a setter function to set the max value of this device"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Device::set_Min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_device.html#ad74f349907b01a87ace4ea100f3b50e6",tooltip="a setter function to set the min value of this device"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Device::set_name",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_device.html#afb33bd52da144fe736e1fbc5b35fedeb",tooltip="a setter function to set the name of this device"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Component::set_netlist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_component.html#acc09295cfdde71805474cabf1520b46b",tooltip="setter function to set the netlist map of this component"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Component::set_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_component.html#a2806b4c471f8063159073832a4998c56",tooltip="setter function to set the type of the component"];
+}

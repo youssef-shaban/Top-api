@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libAPI_lib.a CMakeFiles/API_lib.dir/API.cpp.obj CMakeFiles/API_lib.dir/Component.cpp.obj CMakeFiles/API_lib.dir/Device.cpp.obj CMakeFiles/API_lib.dir/Resistance.cpp.obj CMakeFiles/API_lib.dir/terminalScreen.cpp.obj CMakeFiles/API_lib.dir/Topology.cpp.obj CMakeFiles/API_lib.dir/Transistor.cpp.obj
+C:\MinGW\bin\ranlib.exe libAPI_lib.a
